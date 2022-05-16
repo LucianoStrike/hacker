@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora HACKER</title>
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <script src="scripts/index.js"></script>
+</head>
+<body>
+    <div class="fundo">
+        <div class="container">
+            <div class="estatico"></div>
+            <ul class="dinamico">
+                <li><span>HACKER</span></li>
+                <li><span>HACKER</span></li>
+                <li><span>HACKER</span></li>
+                <li><span>HACKER</span></li>
+            </ul>
+        </div>
+
+        <div class="calculadora">
+            <h1 style="color: rgb(0, 255, 0);">GO</h1>
+            <p id="resultado"></p>
+            <table>
+                <tr>
+                    <td><button class="botao" onclick="limpar()">C</button></td>
+                    <td><button class="botao" onclick="back()"><</button></td>
+                    <td><button class="botao" onclick="inserir('/')">/</button></td>
+                    <td><button class="botao" onclick="inserir('*')">X</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="inserir('7')">7</button></td>
+                    <td><button class="botao" onclick="inserir('8')">8</button></td>
+                    <td><button class="botao" onclick="inserir('9')">9</button></td>
+                    <td><button class="botao" onclick="inserir('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="inserir('4')">4</button></td>
+                    <td><button class="botao" onclick="inserir('5')">5</button></td>
+                    <td><button class="botao" onclick="inserir('6')">6</button></td>
+                    <td><button class="botao" onclick="inserir('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="inserir('1')">1</button></td>
+                    <td><button class="botao" onclick="inserir('2')">2</button></td>
+                    <td><button class="botao" onclick="inserir('3')">3</button></td>
+                    <td rowspan="2"><button class="botao" onclick="calcularResultado()" style="height: 106px;">=</button></td> 
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="botao" onclick="inserir('0')" style="width: 106px">0</button></td>
+                    <td><button class="botao" onclick="inserir('.')">.</button></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><button class="botao" onclick="limparBaixo()" style="width: 300px; color: rgb(0, 0, 0); background-color: rgb(0, 255, 0);">ZERAR CONTADOR</button></td>
+                </tr> 
+
+
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
